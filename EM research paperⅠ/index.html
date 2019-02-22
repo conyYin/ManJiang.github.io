@@ -81,7 +81,7 @@
 <meta property="og:site_name" content="Fighting Cony">
 <meta property="og:description" content="screaming channel 调研，相关文章阅读。 1.Zero-Overhead Profiling via EM Emanations  https://dl.acm.org/citation.cfm?id=2931065  1使用电磁辐射分析程序执行路径，分为训练阶段和分析阶段 可借用方法：波形匹配 2.RF-PUF: Enhancing IoT Security  through A">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-18T07:02:37.276Z">
+<meta property="og:updated_time" content="2019-02-22T01:12:28.245Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EM paper">
 <meta name="twitter:description" content="screaming channel 调研，相关文章阅读。 1.Zero-Overhead Profiling via EM Emanations  https://dl.acm.org/citation.cfm?id=2931065  1使用电磁辐射分析程序执行路径，分为训练阶段和分析阶段 可借用方法：波形匹配 2.RF-PUF: Enhancing IoT Security  through A">
@@ -359,6 +359,10 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">应用在物联网，采用设备的固有物理特征进行设备认证</span><br><span class="line">利用设备在制造时的固有偏差</span><br><span class="line">使用matlab神经网络训练</span><br><span class="line">作者的实验使用两个SDR，一个用于发射信号(私认为该SDR模拟不同特征的信号)，另一个用于接收，并运行网络。</span><br></pre></td></tr></table></figure>
 <p>这篇文章虽然应用在物联网场景，但却没有具体实验，而且其接收的信号应该是一种类型。可借用方法：放入神经网络的信号特征</p>
+<p>3.<strong>Real-time Identification and Prevention of Rogue WiFi Connections</strong>  by PengFei</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">利用WiFi信号的phase error生成设备指纹，其中需要考虑在多变场景、时间推移下指纹的不变形。类似第二篇文章利用设备制造误差和环境特征，AP得到的CSI有很大偏差</span><br></pre></td></tr></table></figure>
+<p>some aurhors use signal characteristics analysis(such as CSI),but they require device is static.</p>
+<p>someone use device motion and radio signal strength.</p>
 
       
     </div>
@@ -385,6 +389,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/word/" rel="prev" title>
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -449,7 +469,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -459,7 +479,7 @@
               
               
               <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
