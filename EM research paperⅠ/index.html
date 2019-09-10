@@ -73,18 +73,18 @@
 
 
 
-<meta name="description" content="screaming channel 调研，相关文章阅读。 1.Zero-Overhead Profiling via EM Emanations  https://dl.acm.org/citation.cfm?id=2931065  1使用电磁辐射分析程序执行路径，分为训练阶段和分析阶段 可借用方法：波形匹配 2.RF-PUF: Enhancing IoT Security  through A">
+<meta name="description" content="screaming channel 调研，相关文章阅读。 1.Zero-Overhead Profiling via EM Emanations  https://dl.acm.org/citation.cfm?id=2931065  1使用电磁辐射分析程序执行路径，分为训练阶段和分析阶段 同类文章：On Code Execution Tracking via Power Side-Channel">
 <meta name="keywords" content="screaming channel">
 <meta property="og:type" content="article">
 <meta property="og:title" content="EM paper">
 <meta property="og:url" content="http://conyyin.github.io/EM research paperⅠ/index.html">
 <meta property="og:site_name" content="Fighting Cony">
-<meta property="og:description" content="screaming channel 调研，相关文章阅读。 1.Zero-Overhead Profiling via EM Emanations  https://dl.acm.org/citation.cfm?id=2931065  1使用电磁辐射分析程序执行路径，分为训练阶段和分析阶段 可借用方法：波形匹配 2.RF-PUF: Enhancing IoT Security  through A">
+<meta property="og:description" content="screaming channel 调研，相关文章阅读。 1.Zero-Overhead Profiling via EM Emanations  https://dl.acm.org/citation.cfm?id=2931065  1使用电磁辐射分析程序执行路径，分为训练阶段和分析阶段 同类文章：On Code Execution Tracking via Power Side-Channel">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-22T01:15:53.387Z">
+<meta property="og:updated_time" content="2019-03-06T09:46:43.834Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="EM paper">
-<meta name="twitter:description" content="screaming channel 调研，相关文章阅读。 1.Zero-Overhead Profiling via EM Emanations  https://dl.acm.org/citation.cfm?id=2931065  1使用电磁辐射分析程序执行路径，分为训练阶段和分析阶段 可借用方法：波形匹配 2.RF-PUF: Enhancing IoT Security  through A">
+<meta name="twitter:description" content="screaming channel 调研，相关文章阅读。 1.Zero-Overhead Profiling via EM Emanations  https://dl.acm.org/citation.cfm?id=2931065  1使用电磁辐射分析程序执行路径，分为训练阶段和分析阶段 同类文章：On Code Execution Tracking via Power Side-Channel">
 
 
 
@@ -352,7 +352,8 @@
 <p><a href="https://dl.acm.org/citation.cfm?id=2931065" target="_blank" rel="noopener">https://dl.acm.org/citation.cfm?id=2931065</a></p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用电磁辐射分析程序执行路径，分为训练阶段和分析阶段</span><br></pre></td></tr></table></figure>
-<p>可借用方法：波形匹配</p>
+<p>同类文章：<strong>On Code Execution Tracking via Power Side-Channel</strong></p>
+<p>：波形匹配</p>
 <p>2.<strong>RF-PUF: Enhancing IoT Security  through Authentication of Wireless Nodes</strong> <strong>using In-situ Machine Learning</strong> </p>
 <blockquote>
 <p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8390918" target="_blank" rel="noopener">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8390918</a></p>
@@ -363,6 +364,12 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">利用WiFi信号的phase error生成设备指纹，其中需要考虑在多变场景、时间推移下指纹的不变形。类似第二篇文章利用设备制造误差和环境特征，AP得到的CSI有很大偏差</span><br></pre></td></tr></table></figure>
 <p>some aurhors use signal characteristics analysis(such as CSI),but they require device is static.</p>
 <p>someone use device motion and radio signal strength.</p>
+<p>4.<strong>On Physical-Layer Identification of Wireless Devices</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这篇文章调研众多设备指纹文章，总结了指纹认证系统，同时例举了针对该系统的可能攻击</span><br></pre></td></tr></table></figure>
+<p>5.<strong>Fingerprinting Wi-Fi Devices Using Software Defined Radios</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">实验：USRP N210安装自己编写的固件，多种WiFi设备</span><br><span class="line">利用WiFi Scrambling Seed、Frequency Offset、Frame Transient生成三种指纹，定义分类函数(分类函数的定义：两个实体的相似程度)，作者对分类方法的处理可以参考</span><br></pre></td></tr></table></figure>
+<p>与现在实验不同，作者用的是自定义的USRP，除了接收信号，还有其他处理，而且作者是提取的WiFi信号的特征，类似鹏飞的文章。若考虑多种芯片不可行。</p>
+<p>而其他文章是芯片进行指令的运行，USRP接收其功率特征。</p>
 
       
     </div>
@@ -469,7 +476,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
